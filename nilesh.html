@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nilesh Kendre — AI/ML Engineer specializing in Generative AI, LLMs, RAG, Agentic AI and production ML systems.">
+  <title>Nilesh Kendre | AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#070a0f; --panel:#0d121a; --panel2:#111823; --text:#f5f7fb; --muted:#9aa6b5;
+      --line:rgba(255,255,255,.09); --accent:#7c5cff; --accent2:#19d3ae; --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 75% 10%,rgba(124,92,255,.14),transparent 28%),radial-gradient(circle at 10% 40%,rgba(25,211,174,.07),transparent 25%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+    nav{position:fixed;z-index:10;top:0;left:0;right:0;background:rgba(7,10,15,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-family:"Space Grotesk";font-weight:700;font-size:20px}
+    .logo span{color:var(--accent)} .links{display:flex;gap:28px;color:#b7c0cc;font-size:14px}.links a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;border:1px solid var(--line);background:#fff;color:#080a0e;font-weight:700;font-size:14px}
+    .btn.ghost{background:transparent;color:#fff}.btn:hover{transform:translateY(-1px)}
+    .hero{padding:150px 0 90px;min-height:90vh;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
+    .eyebrow{color:var(--accent2);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+    h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-.055em;margin:18px 0 24px}
+    h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1px #aeb8c7}.lead{font-size:19px;color:#b5bfcc;max-width:690px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.meta{display:flex;gap:22px;flex-wrap:wrap;color:#8f9baa;font-size:14px}.meta strong{color:#fff}
+    .hero-card{background:linear-gradient(145deg,rgba(124,92,255,.18),rgba(25,211,174,.05) 45%,rgba(255,255,255,.03));border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.28)}
+    .orb{width:180px;height:180px;margin:10px auto 28px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c7c0ff 0 3%,#7c5cff 18%,#22165f 48%,#0b0e15 70%);box-shadow:0 0 70px rgba(124,92,255,.35)}
+    .hero-card h3{font-family:"Space Grotesk";font-size:22px;margin:0 0 7px;text-align:center}.hero-card p{text-align:center;color:var(--muted);margin:0}
+    section{padding:95px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+    .kicker{font-size:12px;color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:.12em}.section-head h2{font-family:"Space Grotesk";font-size:42px;letter-spacing:-.04em;margin:8px 0 0}
+    .section-head p{color:var(--muted);max-width:470px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(13,18,26,.8);border:1px solid var(--line);border-radius:20px;padding:25px}
+    .card h3{font-family:"Space Grotesk";margin:0 0 10px;font-size:21px}.card p{color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{padding:6px 9px;border:1px solid var(--line);border-radius:999px;color:#c6ced8;font-size:12px}
+    .project{grid-column:span 1;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}.project .num{color:#6e7886;font-size:12px}.project h3{font-size:25px}.project .impact{color:#dce2ea;font-size:14px;margin-top:15px}
+    .timeline{border-left:1px solid var(--line);padding-left:28px}.role{position:relative;margin-bottom:42px}.role:before{content:"";position:absolute;left:-34px;top:8px;width:9px;height:9px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(124,92,255,.12)}
+    .role-top{display:flex;justify-content:space-between;gap:20px}.role h3{margin:0;font-family:"Space Grotesk";font-size:22px}.date{color:#8d98a6;font-size:13px;white-space:nowrap}.company{color:var(--accent2);font-weight:700;margin:5px 0 14px}
+    .role ul{margin:0;padding-left:20px;color:#aeb8c5}.role li{margin:7px 0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.stat{padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}.stat b{font-family:"Space Grotesk";font-size:34px}.stat span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{padding:19px;border:1px solid var(--line);border-radius:16px}.skill b{display:block;margin-bottom:7px}.skill span{color:var(--muted);font-size:14px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{padding:30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(124,92,255,.1),rgba(255,255,255,.02))}
+    footer{padding:30px 0;color:#717d8b;font-size:13px}
+    @media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:125px}.hero-card{max-width:500px}.grid{grid-template-columns:1fr}.project{grid-column:auto}.skills,.contact{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.stats{grid-template-columns:1fr}.role-top{display:block}.date{display:block;margin-top:4px}}
+  </style>
+</head>
+<body>
+<nav><div class="container nav">
+  <a class="logo" href="#top">NK<span>.</span></a>
+  <div class="links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <a class="btn ghost" href="#contact">Let's talk ↗</a>
+</div></nav>
+
+<main id="top">
+<section class="hero container">
+  <div>
+    <div class="eyebrow">AI / ML Engineer · Pune, India</div>
+    <h1>Building <em>useful intelligence</em> for real-world products.</h1>
+    <p class="lead">I design and deploy production-grade Generative AI, LLM, RAG, Agentic AI and machine-learning systems — from retrieval and evaluation to APIs, containers and cloud deployment.</p>
+    <div class="actions"><a class="btn" href="#work">Explore my work ↓</a><a class="btn ghost" href="mailto:nilesh.k02k@gmail.com">Email me ↗</a></div>
+    <div class="meta"><span><strong>3+ yrs</strong> experience</span><span><strong>25%</strong> higher response accuracy</span><span><strong>15%</strong> prescription engagement</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="orb"></div>
+    <h3>AI systems, end to end.</h3><p>LLMs · RAG · Agents · NLP · ML · APIs · AWS</p>
+  </div>
+</section>
+
+<section id="work"><div class="container">
+  <div class="section-head"><div><div class="kicker">Selected work</div><h2>Projects with measurable outcomes.</h2></div><p>Production-oriented AI work across healthcare, legal/compliance and intelligent automation.</p></div>
+  <div class="grid">
+    <article class="card project"><div><div class="num">01 / HEALTHCARE</div><h3>Medical RAG Assistant</h3><p>Document-grounded clinical assistance built for clinicians and care teams, designed for reliable answers with source traceability.</p><div class="tags"><span class="tag">LangChain</span><span class="tag">GPT-4o</span><span class="tag">Pinecone</span><span class="tag">AWS Textract</span><span class="tag">FastAPI</span></div></div><div class="impact">Impact → 25% higher response accuracy; 15% increased prescription engagement.</div></article>
+    <article class="card project"><div><div class="num">02 / LEGAL & COMPLIANCE</div><h3>Enterprise Policy Assistant</h3><p>MultiVector semi-structured RAG for dense legal documents, clauses, penalty schedules and compliance matrices.</p><div class="tags"><span class="tag">MultiVector RAG</span><span class="tag">Cross-Encoder</span><span class="tag">YOLOX</span><span class="tag">Unstructured</span></div></div><div class="impact">Impact → Accurate, traceable answers while reducing manual document-review time.</div></article>
+    <article class="card project"><div><div class="num">03 / NLP AUTOMATION</div><h3>Smart Complaint Routing</h3><p>Fine-tuned BERT classifier that automatically categorizes complaints and routes them to the right department.</p><div class="tags"><span class="tag">BERT</span><span class="tag">TensorFlow</span><span class="tag">FastAPI</span><span class="tag">SMTP</span></div></div><div class="impact">Impact → Less manual effort and faster department-level response.</div></article>
+  </div>
+</div></section>
+
+<section id="experience"><div class="container">
+  <div class="section-head"><div><div class="kicker">Experience</div><h2>From model development to deployment.</h2></div><p>Professional experience at Alfa Information Technologies, Pune.</p></div>
+  <div class="timeline">
+    <div class="role"><div class="role-top"><h3>AI / ML Engineer</h3><span class="date">Oct 2023 — Present</span></div><div class="company">ALFA INFORMATION TECHNOLOGIES Pvt. Ltd.</div>
+      <ul><li>Build Generative AI, LLM and RAG applications using LangChain, GPT-4o, Pinecone, FastAPI, Docker and AWS.</li><li>Engineer hybrid retrieval, MMR, domain-specific embeddings, cross-encoder re-ranking and document parsing pipelines.</li><li>Develop NLP classification systems and production APIs for intelligent business automation.</li></ul>
+    </div>
+  </div>
+  <div class="stats"><div class="stat"><b>25%</b><span>higher response accuracy</span></div><div class="stat"><b>15%</b><span>increase in prescription engagement</span></div><div class="stat"><b>3+</b><span>years in AI / ML engineering</span></div></div>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="section-head"><div><div class="kicker">Technical stack</div><h2>Tools I use to ship.</h2></div><p>A practical stack spanning LLM engineering, retrieval, ML, APIs and cloud infrastructure.</p></div>
+  <div class="skills">
+    <div class="skill"><b>Generative AI & LLMs</b><span>LLMs, RAG, Prompt Engineering, Context Engineering, PEFT, LoRA, QLoRA, Evaluation, Fine-tuning</span></div>
+    <div class="skill"><b>Agentic AI</b><span>AI Agents, LangChain, LangGraph, CrewAI, LlamaIndex, ReAct, MCP</span></div>
+    <div class="skill"><b>RAG & Vector Search</b><span>Embeddings, FAISS, ChromaDB, Pinecone, Hybrid Search, MMR, MultiVectorRetriever, Cross-Encoder Re-ranking</span></div>
+    <div class="skill"><b>AI / ML & Deep Learning</b><span>Regression, Classification, Clustering, NLP, TensorFlow, Keras, Scikit-learn, ANN, CNN, LSTM, GRU, BERT</span></div>
+    <div class="skill"><b>Programming & APIs</b><span>Python, SQL, FastAPI, Flask, Pydantic, REST APIs</span></div>
+    <div class="skill"><b>Cloud, Data & Dev Tools</b><span>AWS, Azure, Docker, Git, Pandas, NumPy, Jupyter, VS Code, Postman, Plotly, Matplotlib</span></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="container">
+  <div class="section-head"><div><div class="kicker">Background</div><h2>Strong engineering foundation.</h2></div><p>Academic training in advanced computing and engineering, paired with hands-on AI delivery.</p></div>
+  <div class="grid">
+    <div class="card"><h3>PG-DAC · 2023</h3><p>Diploma in Advanced Computing · CDAC, Pune</p><div class="tags"><span class="tag">80.50%</span></div></div>
+    <div class="card"><h3>B.E. · 2022</h3><p>Bachelor of Engineering · Savitribai Phule Pune University</p><div class="tags"><span class="tag">7.90 CGPA</span></div></div>
+    <div class="card"><h3>HSC · 2018</h3><p>Maharashtra State Board</p><div class="tags"><span class="tag">80.15%</span></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="contact"><div class="contact-box"><div class="kicker">Have a problem worth solving?</div><h2 style="font-family:'Space Grotesk';font-size:42px;line-height:1.05;margin:12px 0">Let's build something intelligent.</h2><p style="color:var(--muted)">Open to AI/ML engineering opportunities, GenAI projects and conversations about production AI systems.</p></div>
+  <div class="contact-box"><p class="kicker">Contact</p><h3 style="font-family:'Space Grotesk';font-size:24px">Nilesh Kendre</h3><p><a href="mailto:nilesh.k02k@gmail.com">nilesh.k02k@gmail.com</a><br>+91 7066887349<br>Pune, Maharashtra, India</p><a class="btn" href="mailto:nilesh.k02k@gmail.com">Start a conversation ↗</a></div></div>
+</div></section>
+</main>
+<footer><div class="container">© 2026 Nilesh Kendre · AI/ML Engineer</div></footer>
+</body></html>
